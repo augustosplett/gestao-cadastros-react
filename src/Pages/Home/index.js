@@ -20,11 +20,9 @@ const Home = () => {
 
     return(
         <S.Container>
-            {handleLoadClientsData()}
-            {handleLoadProductsData()}
             <S.Title>Painel de Gestão</S.Title>
-            <S.Button to='./clients'>Consulta Dados de Cliente</S.Button>
-            <S.Button to='./products'>Inventário de Produtos</S.Button>
+            <S.Button to='./clients' onClick={handleLoadClientsData}>Consulta Dados de Cliente</S.Button>
+            <S.Button to='./products' onClick={handleLoadProductsData}>Inventário de Produtos</S.Button>
         </S.Container>
     )
 }
