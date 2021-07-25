@@ -1,7 +1,7 @@
 {
   "name": "gestao-cadastros",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://augustosplett.github.io/gestao-cadastros-react/",
   "dependencies": {
     "@material-ui/core": "^4.12.2",

@@ -10,7 +10,7 @@ import Produtos from "./Pages/Produtos"
 
 const Routes = () =>{
     return(
-        <Router >
+        <Router basename={'/gestao-cadastros-react/'} >
             <Switch>
                 <Route path="/" exact component={Home} />
                 <Route path="/clients" exact component={Clientes} />
