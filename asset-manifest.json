@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.js": "/gestao-cadastros-react/static/js/main.b3596e5e.chunk.js",
+    "main.js.map": "/gestao-cadastros-react/static/js/main.b3596e5e.chunk.js.map",
+    "runtime-main.js": "/gestao-cadastros-react/static/js/runtime-main.638a509b.js",
+    "runtime-main.js.map": "/gestao-cadastros-react/static/js/runtime-main.638a509b.js.map",
+    "static/js/2.17e34bfe.chunk.js": "/gestao-cadastros-react/static/js/2.17e34bfe.chunk.js",
+    "static/js/2.17e34bfe.chunk.js.map": "/gestao-cadastros-react/static/js/2.17e34bfe.chunk.js.map",
+    "static/js/3.1b89f727.chunk.js": "/gestao-cadastros-react/static/js/3.1b89f727.chunk.js",
+    "static/js/3.1b89f727.chunk.js.map": "/gestao-cadastros-react/static/js/3.1b89f727.chunk.js.map",
+    "static/js/4.1ead0a16.chunk.js": "/gestao-cadastros-react/static/js/4.1ead0a16.chunk.js",
+    "static/js/4.1ead0a16.chunk.js.map": "/gestao-cadastros-react/static/js/4.1ead0a16.chunk.js.map",
+    "static/js/5.78f1733c.chunk.js": "/gestao-cadastros-react/static/js/5.78f1733c.chunk.js",
+    "static/js/5.78f1733c.chunk.js.map": "/gestao-cadastros-react/static/js/5.78f1733c.chunk.js.map",
+    "index.html": "/gestao-cadastros-react/index.html",
+    "static/js/2.17e34bfe.chunk.js.LICENSE.txt": "/gestao-cadastros-react/static/js/2.17e34bfe.chunk.js.LICENSE.txt",
+    "static/js/3.1b89f727.chunk.js.LICENSE.txt": "/gestao-cadastros-react/static/js/3.1b89f727.chunk.js.LICENSE.txt",
+    "static/js/4.1ead0a16.chunk.js.LICENSE.txt": "/gestao-cadastros-react/static/js/4.1ead0a16.chunk.js.LICENSE.txt",
+    "static/js/5.78f1733c.chunk.js.LICENSE.txt": "/gestao-cadastros-react/static/js/5.78f1733c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.638a509b.js",
+    "static/js/2.17e34bfe.chunk.js",
+    "static/js/main.b3596e5e.chunk.js"
+  ]
+}
