@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/gestao-cadastros-react/static/js/main.b3596e5e.chunk.js",
-    "main.js.map": "/gestao-cadastros-react/static/js/main.b3596e5e.chunk.js.map",
+    "main.js": "/gestao-cadastros-react/static/js/main.9f3965c1.chunk.js",
+    "main.js.map": "/gestao-cadastros-react/static/js/main.9f3965c1.chunk.js.map",
     "runtime-main.js": "/gestao-cadastros-react/static/js/runtime-main.638a509b.js",
     "runtime-main.js.map": "/gestao-cadastros-react/static/js/runtime-main.638a509b.js.map",
     "static/js/2.17e34bfe.chunk.js": "/gestao-cadastros-react/static/js/2.17e34bfe.chunk.js",
@@ -21,6 +21,6 @@
   "entrypoints": [
     "static/js/runtime-main.638a509b.js",
     "static/js/2.17e34bfe.chunk.js",
-    "static/js/main.b3596e5e.chunk.js"
+    "static/js/main.9f3965c1.chunk.js"
   ]
 }
