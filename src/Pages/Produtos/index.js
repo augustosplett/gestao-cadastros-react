@@ -13,6 +13,11 @@ const Produtos = () => {
         setRepository(repository);
     }, []);
 
+    useEffect(() => {
+        const upDatedDB = JSON.stringify(repository);
+        localStorage.setItem("ProductsDB",upDatedDB);
+    },[repository]);
+
     const tableColumns = [
         {title: 'Cod Produto', field: 'id'},
         {title: 'Fabricande', field: 'manufacturer'},
@@ -33,6 +38,14 @@ const Produtos = () => {
                     search: false,
                     paging: false,
                     tableLayout: "auto"
+                }}
+                editable={{
+                    onRowAdd: (newRow) => new Promise((resolve, reject)=>{
+                        const updatedRows = [...repository, newRow];
+                        setRepository(updatedRows);
+                        resolve();
+
+                    })
                 }}
             />
         </S.Container>

@@ -12,6 +12,11 @@ const Clientes = () => {
         setRepository(repository);
     }, []);
 
+    useEffect(() => {
+        const upDatedDB = JSON.stringify(repository);
+        localStorage.setItem("clientsDB",upDatedDB);
+    },[repository]);
+
     const tableColumns = [
         {title: 'Cod Cliente', field: 'id'},
         {title: 'Nome', field: 'customer_name'},
@@ -32,6 +37,14 @@ const Clientes = () => {
                     search: false,
                     paging: false,
                     tableLayout: "auto"
+                }}
+                editable={{
+                    onRowAdd: (newRow) => new Promise((resolve, reject)=>{
+                        const updatedRows = [...repository, newRow];
+                        setRepository(updatedRows);
+                        resolve();
+
+                    })
                 }}
             />
         </S.Container>

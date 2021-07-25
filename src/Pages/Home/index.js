@@ -5,17 +5,21 @@ import * as S from '../../Styles/SharedStyles/styled';
 const Home = () => {
 
     const handleLoadClientsData = () => {
-        axios.get(`customer_data.json`).then(response => {
-            const clientsData = JSON.stringify(response.data);
-            localStorage.setItem("clientsDB",clientsData )
-        })
+        if(localStorage.getItem('clientsDB') === null){
+            axios.get(`customer_data.json`).then(response => {
+                const clientsData = JSON.stringify(response.data);
+                localStorage.setItem("clientsDB",clientsData )
+            })
+        }
     };
 
     const handleLoadProductsData = () => {
-        axios.get(`products_data.json`).then(response => {
-            const clientsData = JSON.stringify(response.data);
-            localStorage.setItem("ProductsDB",clientsData )
-        })
+        if(localStorage.getItem('clientsDB') === null){
+            axios.get(`products_data.json`).then(response => {
+                const clientsData = JSON.stringify(response.data);
+                localStorage.setItem("ProductsDB",clientsData )
+            })
+        }
     };
 
     return(
