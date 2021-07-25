@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import * as S from '../../Styles/SharedStyles/styled';
 import MaterialTable from "material-table";
+import axios from 'axios';
 
 const Clientes = () => {
 
@@ -14,14 +15,23 @@ const Clientes = () => {
     const [repository, setRepository] = useState([]);
 
     useEffect(() => {
-        let repository = localStorage.getItem('clientsDB');
-        repository = JSON.parse(repository);
-        setRepository(repository);
-    }, []);
+
+        if(localStorage.getItem('clientsDB') === null){
+            axios.get(`customer_data.json`).then(response => {
+                setRepository(response.data)
+                const clientsData = JSON.stringify(response.data);
+                localStorage.setItem("clientsDB", clientsData);
+            })
+        }else{
+            const clientsData = localStorage.getItem("clientsDB")
+            setRepository(JSON.parse(clientsData))
+        }
+
+    }, [])
 
     useEffect(() => {
         const upDatedDB = JSON.stringify(repository);
-        localStorage.setItem("clientsDB",upDatedDB);
+        localStorage.setItem("clientsDB", upDatedDB );
     },[repository]);
 
     const tableColumns = [

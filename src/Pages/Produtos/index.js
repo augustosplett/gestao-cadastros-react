@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import * as S from '../../Styles/SharedStyles/styled';
 import MaterialTable from "material-table";
-
+import axios from 'axios';
 
 const Produtos = () => {
 
@@ -15,10 +15,19 @@ const Produtos = () => {
     const [repository, setRepository] = useState([]);
 
     useEffect(() => {
-        let repository = localStorage.getItem('ProductsDB');
-        repository = JSON.parse(repository);
-        setRepository(repository);
-    }, []);
+        
+        if(localStorage.getItem('ProductsDB') === null){
+            axios.get(`products_data.json`).then(response => {
+                setRepository(response.data)
+                const clientsData = JSON.stringify(response.data);
+                localStorage.setItem("ProductsDB", clientsData);
+            })
+        }else{
+            const clientsData = localStorage.getItem("ProductsDB")
+            setRepository(JSON.parse(clientsData))
+        }
+
+    }, [])
 
     useEffect(() => {
         const upDatedDB = JSON.stringify(repository);
