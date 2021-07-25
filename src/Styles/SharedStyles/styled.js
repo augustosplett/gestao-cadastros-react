@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Container = styled.div`
+    min-height: 100vh;
+    min-width: 100vw;
     display: flex;
     flex-flow: column wrap;
     align-content: center;
